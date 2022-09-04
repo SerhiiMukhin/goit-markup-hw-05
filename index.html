@@ -15,6 +15,7 @@
   <link rel="stylesheet" href="./css/styles.css" />
   <title>Студія</title>
 </head>
+
 <body>
   <!-- header -->
   <header class="header">
@@ -52,7 +53,7 @@
     <section class="section hero">
       <div class="container">
         <h1 class="title">Ефективні рішення для вашого бізнесу</h1>
-        <button class="button" type="button">Замовити послугу</button>
+        <button data-modal-open class="button" type="button">Замовити послугу</button>
       </div>
     </section>
     <!-- section-features -->
@@ -117,7 +118,7 @@
           <li class="item">
             <img class="img-no-gap" src="./images/box-2.jpg" alt="Адаптація під мобільні пристрої" width="370"
               height="294" />
-              <div class="description">Мобільні додатки</div>
+            <div class="description">Мобільні додатки</div>
           </li>
           <li class="item">
             <img class="img-no-gap" src="./images/box-3.jpg" alt="Розробка дизайну" width="370" height="294" />
@@ -387,5 +388,18 @@
       </div>
     </div>
   </footer>
+  <!-- Modal window -->
+  <div class="backdrop is-hidden" data-modal>
+    <div class="modal">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt perferendis totam consectetur debitis
+        officia vero odio deserunt reprehenderit earum! Architecto minima voluptatibus corporis atque, cumque
+        asperiores nulla fugiat ipsam ipsum.
+      </p>
+      <button data-modal-close type="button">Close</button>
+    </div>
+  </div>
+<script src="./js/modal.js"></script>
 </body>
+
 </html>
