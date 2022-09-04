@@ -104,8 +104,6 @@ p {
   display: flex;
 }
 
-.nav .item {}
-
 .nav .item:not(:last-child) {
   margin-right: 50px;
 }
@@ -146,8 +144,6 @@ p {
   display: flex;
   margin-left: auto;
 }
-
-.contacts .item {}
 
 .contacts .item:not(:last-child) {
   margin-right: 50px;
