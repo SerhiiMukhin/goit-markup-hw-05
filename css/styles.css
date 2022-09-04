@@ -22,6 +22,7 @@
 body {
   font-family: 'Roboto', 'Arial', 'Tahoma', sans-serif;
   font-size: 14px;
+  font-weight: 400;
   color: var(--primary-text-color);
   background-color: var(--primary-background-color);
 }
@@ -46,8 +47,9 @@ ul {
   margin: 0;
 }
 
-.link {
+a {
   text-decoration: none;
+  color: currentColor;
 }
 
 h1,
@@ -584,6 +586,34 @@ p {
 .portfolio-card {
   padding: 20px 24px;
   border: 1px solid var(--cards-border-color);
+}
+
+.portfolio-list .thumb {
+  position: relative;
+  overflow: hidden;
+}
+
+.overlay {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--accent-color);
+  opacity: 0.9;
+  padding: 24px;
+  color: var(--tertiary-text-color);
+  font-size: 18px;
+  line-height: calc(28/18);
+  letter-spacing: 0.03em;
+  transition: transform var(--hover-focus-transition);
+}
+
+.portfolio-list .item:hover .overlay{
+  transform: translateY(-100%);
 }
 
 .portfolio .title {
