@@ -653,6 +653,17 @@ p {
 
   width: 528px;
   height: 581px;
-  padding: 20px;
+  padding: 8px;
   background-color: var(--primary-background-color);
+}
+
+.close-modal-button {
+  display: block;
+  margin-left: auto;
+  margin-bottom: 10px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: var(--primary-background-color);
+  border: 1px solid rgba(0, 0, 0, 0.1);
 }
