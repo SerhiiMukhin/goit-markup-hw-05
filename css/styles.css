@@ -639,13 +639,13 @@ p {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
   opacity: 1;
-  transition: opacity var(--hover-focus-transition);
+  transition: opacity var(--hover-focus-transition), visibility var(--hover-focus-transition);
 }
 
 .backdrop.is-hidden {
   opacity: 0;
   pointer-events: none;
-  transition: opacity var(--hover-focus-transition);
+  visibility: hidden;
 }
 
 .backdrop.is-hidden .modal {
