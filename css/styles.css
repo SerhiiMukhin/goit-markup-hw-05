@@ -687,6 +687,8 @@ p {
   fill: var(--accent-color);
 }
 
+/* Form */
+
 .form-title {
   margin-bottom: 12px;
 
@@ -695,6 +697,15 @@ p {
   line-height: calc(23/20);
   text-align: center;
   letter-spacing: 0.03em;
+}
+
+textarea {
+  resize: none;
+}
+
+.form .link {
+  text-decoration: underline;
+  color: var(--accent-color);
 }
 
 .submit-btn {

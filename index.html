@@ -397,7 +397,7 @@
         </svg>
       </button>
       <h2 class="form-title">Залиште свої дані, ми вам передзвонимо</h2>
-      <form action="">
+      <form class="form">
         <label for="name">Ім'я</label>
         <input type="text" name="name" id="name">
 
@@ -408,7 +408,10 @@
         <input type="email" name="email" id="email">
 
         <label for="comment">Коментар</label>
-        <input type="text" name="comment" id="comment" placeholder="Введіть текст">
+        <textarea name="comment" id="comment" rows="10" placeholder="Введіть текст"></textarea> 
+
+        <input type="checkbox" name="confirm" id="confirm">
+        <label for="confirm">Погоджуюся з розсилкою та приймаю <a href="" class="link">Умови договору</a></label>
 
         <button class="submit-btn" type="submit">Відправити</button>
 
